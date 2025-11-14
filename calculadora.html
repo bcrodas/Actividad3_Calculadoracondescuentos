@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Descuentos</title>
+
+  <!-- Bootstrap local -->
+  <link rel="stylesheet" href="public/vendor/css/bootstrap.min.css">
+  <!-- Tu hoja de estilos -->
+  <link rel="stylesheet" href="public/css/estilos.css">
+</head>
+
+<body class="bg-light">
+
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4" style="max-width: 480px; width: 100%;">
+      <h4 class="text-center text-primary mb-4">💰 Calculadora de Descuentos</h4>
+
+      <form id="formDescuento">
+        <div class="mb-3">
+          <label for="producto" class="form-label">Nombre del producto</label>
+          <input type="text" id="producto" class="form-control" placeholder="Ej: Laptop Lenovo">
+        </div>
+
+        <div class="mb-3">
+          <label for="precio" class="form-label">Precio del producto ($)</label>
+          <input type="number" id="precio" class="form-control" placeholder="Ej: 800">
+        </div>
+
+        <div class="mb-3">
+          <label for="cliente" class="form-label">Tipo de cliente</label>
+          <select id="cliente" class="form-select">
+            <option selected disabled>Seleccione una opción</option>
+            <option>Estudiante</option>
+            <option>Adulto</option>
+            <option>Jubilado</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="pago" class="form-label">Forma de pago</label>
+          <select id="pago" class="form-select">
+            <option selected disabled>Seleccione una opción</option>
+            <option>Efectivo</option>
+            <option>Tarjeta</option>
+            <option>Transferencia</option>
+          </select>
+        </div>
+
+        <div class="d-grid">
+          <button type="button" class="btn btn-primary" id="btnCalcular">Calcular Precio Final</button>
+        </div>
+      </form>
+
+      <!-- Sección de resultado -->
+      <div class="mt-4">
+        <h5 class="text-center text-success">Resultado Final</h5>
+        <textarea id="resultado" class="form-control text-center mt-2" rows="3" readonly placeholder="Aquí aparecerá su resultado..."></textarea>
+      </div>
+
+      <div class="mt-4 text-center">
+        <small class="text-muted">© 2025 Calculadora de Descuentos | Grupo 1</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap local JS -->
+  <script src="public/vendor/js/bootstrap.bundle.min.js"></script>
+  <script src="public/js/logica.js"></script>
+</body>
+</html>
