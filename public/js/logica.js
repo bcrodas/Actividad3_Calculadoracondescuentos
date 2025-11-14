@@ -7,7 +7,7 @@ document.getElementById('btnCalcular').addEventListener('click', function() {
   const pago = document.getElementById('pago').value.toLowerCase();
   const resultado = document.getElementById('resultado');
 
-  // Aplicar descuento según el tipo de cliente
+  // Aplicar descuento según el tipo de cliente por Bárbara Rodas
   let descuento = 0;
   if (tipo === 'estudiante') {
       descuento = 0.20; // 20% de descuento
