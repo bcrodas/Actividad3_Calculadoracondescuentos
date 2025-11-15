@@ -16,7 +16,7 @@ document.getElementById('btnCalcular').addEventListener('click', function() {
   } else if (tipo === 'jubilado') {
       descuento = 0.30; // 30% de descuento
   }
-
+  // Operacion ternaria por Marcos Bajaña
   // Descuento adicional si paga en efectivo utilizando el operador ternario
   const descuentoAdicional = (pago === 'efectivo') ? 0.05 : 0;
   const descuentoTotal = descuento + descuentoAdicional;
