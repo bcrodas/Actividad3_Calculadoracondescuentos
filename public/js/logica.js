@@ -24,6 +24,7 @@ document.getElementById('btnCalcular').addEventListener('click', function() {
   // Calcular precio final
   const precioFinal = precio - (precio * descuentoTotal);
 
+  //Mensaje motivacional hecho por Ginger Banchon
   // Mensaje motivacional para cada tipo de cliente
   let mensaje = '';
   switch (tipo) {
